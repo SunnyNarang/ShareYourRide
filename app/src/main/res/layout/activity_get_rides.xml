@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".GetRidesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="60dp">
+
+        <exodiasolutions.bikepool.Custom.TV_normaltext
+            android:layout_width="wrap_content"
+            android:text="Rides Avialable"
+            android:textColor="#dddddd"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_search"
+        />
+
+    <exodiasolutions.bikepool.Custom.CEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:hint="Search Destination"
+        android:id="@+id/des"
+        />
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/topic_list"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

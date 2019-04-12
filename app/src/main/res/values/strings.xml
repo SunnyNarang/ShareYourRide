@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShareYourRide</string>
+    <string name="location_permission_denied">2</string>
+    <string name="permission_required_toast">0</string>
+
+    <string name="permission_rationale_location">1</string>
+</resources>

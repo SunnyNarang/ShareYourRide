@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="60dp">
+
+        <exodiasolutions.bikepool.Custom.TV_normaltext
+            android:layout_width="wrap_content"
+            android:text="Share Your Ride"
+            android:textColor="#dddddd"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+            android:background="?android:selectableItemBackground"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="3dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0F0F0"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/logo"
+                    android:foregroundGravity="center"
+                    android:scaleType="centerCrop"></ImageView>
+
+                <exodiasolutions.bikepool.Custom.TV_normaltext
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Name: Sunny Narang"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#555" />
+
+                <exodiasolutions.bikepool.Custom.TV_normaltext
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Name: Sunny Narang"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#555" />
+
+                <exodiasolutions.bikepool.Custom.CEditText
+                    android:id="@+id/from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="#0000"
+                    android:gravity="left"
+                    android:hint="Source"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:textColor="@color/colorbutton"
+                    android:textColorHint="@color/colorhint"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="#dad8d8" />
+
+                <exodiasolutions.bikepool.Custom.CEditText
+                    android:id="@+id/to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="#0000"
+                    android:gravity="left"
+                    android:hint="Destination"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:textColor="@color/colorbutton"
+                    android:textColorHint="@color/colorhint"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="#dad8d8" />
+
+
+
+
+                <exodiasolutions.bikepool.Custom.CEditText
+                    android:id="@+id/bikenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="#0000"
+                    android:gravity="left"
+                    android:hint="Bike Number"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:textColor="@color/colorbutton"
+                    android:textColorHint="@color/colorhint"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="#dad8d8" />
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    tools:context=".MainActivity">
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioGroup">
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Today"
+                            android:layout_marginTop="10dp"
+                            android:checked="true"
+                            android:textSize="20dp" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tomorrow"
+                            android:layout_marginTop="20dp"
+                            android:checked="false"
+
+                            android:textSize="20dp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    tools:context=".MainActivity">
+                    <TextView
+                        android:id="@+id/in_time"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:text="TIME"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btn_time"
+                        android:layout_width="wrap_content"
+                        android:layout_alignRight="@+id/in_time"
+                        android:layout_height="wrap_content"
+                        android:text="SELECT TIME"
+                        />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/signin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="120dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/button_press"
+                    android:gravity="center"
+                    android:onClick="shareride"
+                    android:padding="9dp"
+                    android:text="Offer Ride"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+
+
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+</RelativeLayout>
